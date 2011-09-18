@@ -3,7 +3,7 @@
 	Plugin Name: Simply Silverlight
 	Plugin URI: http://www.digitalwindfire.com/software/simply-silverlight
 	Description: Bring the power of Microsoft's visually rich Silverlight technology to your WordPress site today! Simply Silverlight makes deploying Silverlight .xap files to your WordPress blog's posts and pages incredibly easy and intuitive. Don't hesitate, click Activate now!
-	Version: 0
+	Version: 1.0
 	Author: David Wright
 	Author URI: http://www.digitalwindfire.com
 	License: GPL2
