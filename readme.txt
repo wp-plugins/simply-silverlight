@@ -14,13 +14,13 @@ Simply Silverlight is a plugin for deploying Silverlight content in WordPress we
 Bring the power of Microsoft's visually rich Silverlight technology to your WordPress site today! Simply Silverlight makes deploying Silverlight .xap files to your WordPress blog's posts and pages incredibly easy and intuitive. With its sensible default configuration, you'll be up-and-running with Silverlight in no time at all.
 
 Features:
---------
- * Easy-to-use administration menu makes configuration a snap.
- * Outputs correct HTML markup for Silverlight versions 3 and 4.
- * Easily customize the HTML OBJECT (Width, Height and Background) and DIV (Float, Display and Style) tags.
- * Supports Silverlight-specific attributes: autoupgrade, onerror and initparams.
- * Familiar WordPress shortcode can override any global setting for a given instance.
- * Translation-ready (i18n) . Portable Object Template (.POT) file included.
+
+* Easy-to-use administration menu makes configuration a snap.
+* Outputs correct HTML markup for Silverlight versions 3 and 4.
+* Easily customize the HTML OBJECT (Width, Height and Background) and DIV (Float, Display and Style) tags.
+* Supports Silverlight-specific attributes: autoupgrade, onerror and initparams.
+* Familiar WordPress shortcode can override any global setting for a given instance.
+* Translation-ready (i18n) . Portable Object Template (.POT) file included.
 
 == Donations ==
 
