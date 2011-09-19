@@ -30,7 +30,7 @@ Say thanks and encourage future development by [__making a donation__](http://ww
 
 1. Install automatically through the `Plugins`, `Add New` menu in WordPress, or upload the `simply-silverlight` folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the `Plugins` menu in WordPress. Look for the `Simply Silverlight` link to configure the settings.
-1. Add the shortcode `[simply-silverlight yourfile.xap]` to any post or page.
+1. Add the shortcode `[simply-silverlight xap=filename.xap]` to any post or page.
 1. Updates are automatic. Click on "Upgrade Automatically" if prompted from the admin menu. If you ever have to manually upgrade, simply deactivate, uninstall, and repeat the installation steps with the new version.
 
 == Frequently Asked Questions ==
