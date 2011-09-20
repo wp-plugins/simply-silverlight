@@ -22,9 +22,9 @@ Features:
 * Familiar WordPress shortcode can override any global setting for a given instance.
 * Translation-ready (i18n) . Portable Object Template (.POT) file included.
 
-== Donations ==
+= Donations =
 
-Say thanks and encourage future development by [__making a donation__](http://www.digitalwindfire.com/software/simply-silverlight). Click the PayPal Donate button at the bottom of the page. Thank you!
+Say thanks and encourage future development by [__making a donation__](http://www.digitalwindfire.com/software/simply-silverlight#donate). Thanks a lot!
 
 == Installation ==
 
