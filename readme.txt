@@ -1,7 +1,7 @@
 === Simply Silverlight ===
 Contributors: david_wp
 Author URI: http://www.digitalwindfire.com
-Donate link: http://www.digitalwindfire.com/software/simply-silverlight
+Donate link: http://www.digitalwindfire.com/software/simply-silverlight#donate
 Tags: silverlight, microsoft
 Requires at least: 3.0
 Tested up to: 3.2.1
