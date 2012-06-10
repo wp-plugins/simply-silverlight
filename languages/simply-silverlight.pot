@@ -20,9 +20,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Simply Silverlight\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-18 15:44-0500\n"
-"PO-Revision-Date: 2011-09-18 15:44-0500\n"
-"Last-Translator: David Wright <davidwright@digitalwindfire.com>\n"
+"POT-Creation-Date: 2012-06-09 21:08-0500\n"
+"PO-Revision-Date: 2012-06-09 21:08-0500\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,112 +31,156 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../simply-silverlight-html.php:32
-#: ../simply-silverlight.php:92
+#: ../simply-silverlight-html.php:29
+#: ../simply-silverlight.php:129
 msgid "Simply Silverlight Settings"
 msgstr ""
 
-#: ../simply-silverlight-html.php:38
+#: ../simply-silverlight-html.php:35
 msgid "Save Changes"
 msgstr ""
 
-#: ../simply-silverlight-html.php:48
-msgid "The location of the .xap file relative to the root of the site. Can be an absolute URL."
+#: ../simply-silverlight-html.php:36
+msgid "Restore Defaults"
 msgstr ""
 
-#: ../simply-silverlight-html.php:54
-msgid "The Width attribute of the OBJECT tag."
+#: ../simply-silverlight-html.php:42
+msgid "Like this plugin? Consider making a donation. Thank you."
+msgstr ""
+
+#: ../simply-silverlight-html.php:52
+msgid "Make a donation for Simply Silverlight"
 msgstr ""
 
 #: ../simply-silverlight-html.php:60
+msgid "To deploy a Silverlight application on your site, copy the .xap file to the Path indicated below and add the following shortcode to your post or page: [simply-silverlight xap=filename.xap]. To prevent guest users from accessing the app use the Secure Path instead and add the secure attribute to the shortcode: [simply-silverlight xap=filename.xap secure=true]."
+msgstr ""
+
+#: ../simply-silverlight-html.php:61
+msgid "For more examples and documentation please visit "
+msgstr ""
+
+#: ../simply-silverlight-html.php:71
+msgid "A URL containing .xap files. This can be relative to the root of your site or an absolute URL. Typically, Silverlight apps are stored in a ClientBin directory off the root of a site."
+msgstr ""
+
+#: ../simply-silverlight-html.php:82
+msgid "WARNING! The specified path does NOT exist."
+msgstr ""
+
+#: ../simply-silverlight-html.php:86
+msgid "A secure location containing .xap files. The default path is protected from Internet access by web.config (IIS 7) and .htaccess (Apache) files. Ensure this directory is NOT Internet accessible."
+msgstr ""
+
+#: ../simply-silverlight-html.php:98
+msgid "Access control for .xap files in the Secure Path. An empty Access Control means that ANY logged-in user can access .xap files in the Secure Path, guest users CANNOT. To limit access to specific users or roles enter an access control list (ACL) for each .xap. The format is the .xap filename followed by a comma-delimited list of allowed usernames or roles in parentheses. Separate each ACL with a newline. For example, if filename.xap should only be accessed by users belonging to the Administrator or Subscriber roles as well as to the user Joe, regardless of his role membership, you would enter: filename.xap(Administrator,Subscriber,Joe)."
+msgstr ""
+
+#: ../simply-silverlight-html.php:110
+msgid "The Width attribute of the OBJECT tag."
+msgstr ""
+
+#: ../simply-silverlight-html.php:122
 msgid "The Height attribute of the OBJECT tag."
 msgstr ""
 
-#: ../simply-silverlight-html.php:66
+#: ../simply-silverlight-html.php:134
 msgid "The Background color of the OBJECT tag."
 msgstr ""
 
-#: ../simply-silverlight-html.php:78
+#: ../simply-silverlight-html.php:152
 msgid "The CSS Display property of the DIV tag's Style attribute."
 msgstr ""
 
-#: ../simply-silverlight-html.php:90
+#: ../simply-silverlight-html.php:170
 msgid "The CSS Float property of the DIV tag's Style attribute."
 msgstr ""
 
-#: ../simply-silverlight-html.php:96
+#: ../simply-silverlight-html.php:182
 msgid "The Style attribute of the DIV tag. Takes precedence over the Display and Float properties."
 msgstr ""
 
-#: ../simply-silverlight-html.php:108
+#: ../simply-silverlight-html.php:200
 msgid "The minimum runtime version of Silverlight required by the control."
 msgstr ""
 
-#: ../simply-silverlight-html.php:120
+#: ../simply-silverlight-html.php:218
 msgid "The existing Silverlight runtime will attempt to upgrade itself if necessary."
 msgstr ""
 
-#: ../simply-silverlight-html.php:132
+#: ../simply-silverlight-html.php:236
 msgid "Settings will be preserved when plugin is deactivated."
 msgstr ""
 
-#: ../simply-silverlight.php:92
+#: ../simply-silverlight.php:129
 msgid "Simply Silverlight"
 msgstr ""
 
-#: ../simply-silverlight.php:104
+#: ../simply-silverlight.php:141
 msgid "Path"
 msgstr ""
 
-#: ../simply-silverlight.php:105
-msgid "Width"
-msgstr ""
-
-#: ../simply-silverlight.php:106
-msgid "Height"
-msgstr ""
-
-#: ../simply-silverlight.php:107
-msgid "Background"
-msgstr ""
-
-#: ../simply-silverlight.php:108
-msgid "CSS Display"
-msgstr ""
-
-#: ../simply-silverlight.php:109
-msgid "CSS Float"
-msgstr ""
-
-#: ../simply-silverlight.php:110
-msgid "CSS Style"
-msgstr ""
-
-#: ../simply-silverlight.php:111
-msgid "Version"
-msgstr ""
-
-#: ../simply-silverlight.php:112
-msgid "Autoupgrade"
-msgstr ""
-
-#: ../simply-silverlight.php:113
-msgid "Preserve Settings"
-msgstr ""
-
-#: ../simply-silverlight.php:135
-msgid "Path must be a directory."
+#: ../simply-silverlight.php:142
+msgid "Secure Path"
 msgstr ""
 
 #: ../simply-silverlight.php:143
-msgid "Relative paths must begin with a \"/\"."
+msgid "Access Control"
+msgstr ""
+
+#: ../simply-silverlight.php:144
+msgid "Width"
+msgstr ""
+
+#: ../simply-silverlight.php:145
+msgid "Height"
+msgstr ""
+
+#: ../simply-silverlight.php:146
+msgid "Background"
+msgstr ""
+
+#: ../simply-silverlight.php:147
+msgid "CSS Display"
+msgstr ""
+
+#: ../simply-silverlight.php:148
+msgid "CSS Float"
+msgstr ""
+
+#: ../simply-silverlight.php:149
+msgid "CSS Style"
+msgstr ""
+
+#: ../simply-silverlight.php:150
+msgid "Version"
 msgstr ""
 
 #: ../simply-silverlight.php:151
+msgid "Autoupgrade"
+msgstr ""
+
+#: ../simply-silverlight.php:152
+msgid "Preserve Settings"
+msgstr ""
+
+#: ../simply-silverlight.php:183
+msgid "Path must be a directory."
+msgstr ""
+
+#: ../simply-silverlight.php:191
+msgid "Relative paths must begin with a \"/\"."
+msgstr ""
+
+#: ../simply-silverlight.php:200
+msgid "Secure path does not exist."
+msgstr ""
+
+#: ../simply-silverlight.php:224
 msgid "Width must be a number not greater than 9999."
 msgstr ""
 
-#: ../simply-silverlight.php:159
+#: ../simply-silverlight.php:232
 msgid "Height must be a number not greater than 9999."
 msgstr ""
 
