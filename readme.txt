@@ -1,11 +1,11 @@
 === Simply Silverlight ===
 Contributors: david_wp
 Author URI: http://www.digitalwindfire.com
-Donate link: http://www.digitalwindfire.com/software/simply-silverlight#donate
+Donate link: http://www.digitalwindfire.com/software/simply-silverlight/donate
 Tags: silverlight, microsoft
 Requires at least: 3.0
-Tested up to: 3.2.1
-Stable tag: 1.0
+Tested up to: 3.3.2
+Stable tag: 1.0.1
 
 Simply Silverlight is a plugin for deploying Silverlight content in WordPress websites.
 
@@ -16,15 +16,16 @@ Bring the power of Microsoft's visually rich Silverlight technology to your Word
 Features:
 
 * Easy-to-use administration menu makes configuration a snap.
-* Outputs correct HTML markup for Silverlight versions 3 and 4.
+* Outputs correct HTML markup for Silverlight versions 3, 4 and 5.
 * Easily customize the HTML OBJECT (Width, Height and Background) and DIV (Float, Display and Style) tags.
 * Supports Silverlight-specific attributes: autoupgrade, onerror and initparams.
+* Protect Silverlight applications from being downloaded by unauthorized users.
 * Familiar WordPress shortcode can override any global setting for a given instance.
 * Translation-ready (i18n) . Portable Object Template (.POT) file included.
 
 = Donations =
 
-Say thanks and encourage future development by [__making a donation__](http://www.digitalwindfire.com/software/simply-silverlight#donate). Thanks a lot!
+Say thanks and encourage future development by [__making a donation__](http://www.digitalwindfire.com/software/simply-silverlight/donate). Thanks a lot!
 
 == Installation ==
 
@@ -39,18 +40,22 @@ Say thanks and encourage future development by [__making a donation__](http://ww
 
 Not yet. Currently it's only available in English. However, the plugin is ready to be translated. It includes the Portable Object Template (.POT) file needed to make translations. If you would like to translate the plugin into another language, please do so. You may send the translation files to support@digitalwindfire.com and I'll include them in the next release. Thank you for your assistance.
 
-= Can I reset the default global settings? =
-
-Yes. Normally, settings are preserved when the plugin is disabled and only removed when the plugin is uninstalled. To reset the defaults, change the value of the `Preserve Settings` option to false in the plugin's main menu. Then deactivate the plugin. Finally activate the plugin again. Default settings are restored.
-
 == Screenshots ==
 
-1. The main settings menu.
+1. The main settings menu (Top).
+1. The main settings menu (Bottom).
 
 == Changelog ==
+
+= 1.0.1 =
+- ADDED: Ability to restrict access to Silverlight apps authorized users only.
+- ADDED: Silverlight 5 version number included in global settings.
 
 = 1.0 =
 - (18 Sep 2011) Initial Release
 
 == Upgrade Notice ==
-- Initial Release
+
+= 1.0.1 =
+
+Upgrade now to Simply Silverlight 1.0.1 for the ability to secure the path of your .xap files from guest users. This version of Simply Silverlight allows administrators who want to allow only specific users and roles to access their Silverlight apps the granular authentication they've been looking for. Don't delay, upgrade today!
