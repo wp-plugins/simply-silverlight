@@ -57,5 +57,4 @@ Not yet. Currently it's only available in English. However, the plugin is ready 
 == Upgrade Notice ==
 
 = 1.0.1 =
-
-Upgrade now to Simply Silverlight 1.0.1 for the ability to secure the path of your .xap files from guest users. This version of Simply Silverlight allows administrators who want to allow only specific users and roles to access their Silverlight apps the granular authentication they've been looking for. Don't delay, upgrade today!
+This version of Simply Silverlight allows administrators who want to allow only specific users and roles to access their Silverlight apps the granular authentication they've been looking for. Don't delay, upgrade today!
