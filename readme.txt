@@ -6,6 +6,9 @@ Tags: silverlight, microsoft
 Requires at least: 3.0
 Tested up to: 3.2.1
 Stable tag: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 
 Simply Silverlight is a plugin for deploying Silverlight content in WordPress websites.
 
