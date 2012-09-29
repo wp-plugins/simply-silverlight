@@ -3,7 +3,7 @@
 	Plugin Name: Simply Silverlight
 	Plugin URI: http://www.digitalwindfire.com/software/simply-silverlight
 	Description: Bring the power of Microsoft's visually rich Silverlight technology to your WordPress site today! Simply Silverlight makes deploying Silverlight .xap files to your WordPress blog's posts and pages incredibly easy and intuitive. Don't hesitate, click Activate now!
-	Version: 1.0.1
+	Version: 1.0.2
 	Author: David Wright
 	Author URI: http://www.digitalwindfire.com
 	License: GPL2
@@ -36,7 +36,7 @@ if (!is_array($options)) {
 	update_option('simply-silverlight-settings', simply_silverlight_default_settings());
 } else {
 	// check for missing settings
-	if (!array_key_exists('pluginversion', $options))    {$options['pluginversion'] = '1.0.1';}
+	$options['pluginversion'] = '1.0.2';
 	if (!array_key_exists('path', $options))             {$options['path'] = '/ClientBin/';}
 	if (!array_key_exists('securepath', $options))       {$options['securepath'] = dirname(__FILE__).DIRECTORY_SEPARATOR.'secure'.DIRECTORY_SEPARATOR;}
 	if (!array_key_exists('accesscontrol', $options))    {$options['accesscontrol'] = '';}
@@ -55,7 +55,7 @@ if (!is_array($options)) {
 
 // get default settings
 function simply_silverlight_default_settings() {
-	$options = array('pluginversion'    => '1.0.1',
+	$options = array('pluginversion'    => '1.0.2',
 	                 'path'             => '/ClientBin/',
 					 'securepath'       => dirname(__FILE__).DIRECTORY_SEPARATOR.'secure'.DIRECTORY_SEPARATOR,
 					 'accesscontrol'    => '',
@@ -89,6 +89,9 @@ add_action('admin_menu', 'simply_silverlight_add_admin_menu');
 
 // add action to build the admin page
 add_action('admin_init', 'simply_silverlight_build_admin_page');
+
+// add action for settings link
+add_action('admin_menu', 'simply_silverlight_settings_action');
 
 // add shortcode handler
 add_shortcode('simply-silverlight', 'simply_silverlight_shortcode_handler');
@@ -152,6 +155,19 @@ function simply_silverlight_build_admin_page() {
 	add_settings_field('simply-silverlight-settings[preservesettings]', __('Preserve Settings','simply-silverlight'), 'simply_silverlight_preservesettings_setting_html', 'simply_silverlight', 'main', array('label_for' => 'simply-silverlight-settings[preservesettings]'));
 }
 
+// add filter to add settings link
+function simply_silverlight_settings_action() {
+	$plugin = plugin_basename(__FILE__); 
+	add_filter('plugin_action_links_'.$plugin, 'simply_silverlight_settings_add');
+}
+
+// add settings link on plugins page
+function simply_silverlight_settings_add($links) {
+	$settings_link = '<a href="plugins.php?page=simply_silverlight" title="'.__('Configure settings for this plugin', 'simply_silverlight').'">'.__('Settings', 'simply_silverlight').'</a>';
+	array_unshift($links, $settings_link);
+	return $links;
+}
+
 // validate options
 function simply_silverlight_validate_options($in) {
     // reset plugin default settings
@@ -193,7 +209,12 @@ function simply_silverlight_validate_options($in) {
 	} else {
 		$out['path'] = $in['path'];
 	}
-	
+
+    // restore the default secure path
+    if (trim(strtolower($in['securepath']), ' "') == 'default') {
+        $in['securepath'] = dirname(__FILE__).DIRECTORY_SEPARATOR.'secure'.DIRECTORY_SEPARATOR;
+    }
+
 	// warn if secure path doesn't exist
 	if (strlen($in['securepath']) > 0) {
 		if (!is_dir($in['securepath'])) {
@@ -333,7 +354,7 @@ function simply_silverlight_parse_request($wp) {
 			
 			// get acl
 			$acl = explode(',', strtolower($matches[1]));
-								
+
 			// current user login and roles
 			global $current_user;
 			global $user_login;
@@ -366,7 +387,9 @@ function simply_silverlight_parse_request($wp) {
 				header("Content-Type: application/x-silverlight-app");
 				header("Content-Disposition: attachment; filename=\"$requested_xap\"");
 				readfile($filename);
-			}			
+			} else {
+                wp_die('The requested file does not exist.');
+		    }
 		} else {
 			wp_die('There was a problem with the request.');
 		}

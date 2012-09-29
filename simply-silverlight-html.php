@@ -1,6 +1,6 @@
 <?php
 /*
-	This file is part of the Simply Silverlight 1.0.1 plugin for WordPress.
+	This file is part of the Simply Silverlight 1.0.2 plugin for WordPress.
 	For more information, please visit http://www.digitalwindfire.com/software/simply-silverlight.
 */
 
@@ -62,7 +62,7 @@ function simply_silverlight_main_section_html() {
 }
 
 function simply_silverlight_path_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	echo "<div>";
 	echo "<div style='float:left;width:40%;'>";
 	echo "<input id='simply-silverlight-settings[path]' name='simply-silverlight-settings[path]' type='text' style='width:100%;' value='{$options['path']}'>";
@@ -74,7 +74,7 @@ function simply_silverlight_path_setting_html() {
 }
 
 function simply_silverlight_securepath_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	echo "<div>";
 	echo "<div style='float:left;width:40%;'>";
 	echo "<input id='simply-silverlight-settings[securepath]' name='simply-silverlight-settings[securepath]' type='text' style='width:100%;' value='{$options['securepath']}'>";
@@ -83,13 +83,13 @@ function simply_silverlight_securepath_setting_html() {
 	}
 	echo "</div>";
 	echo "<div style='float:left;width:60%;'>";
-	echo "<p class='description' style='margin-left:20px;'>".__('A secure location containing .xap files. The default path is protected from Internet access by web.config (IIS 7) and .htaccess (Apache) files. Ensure this directory is NOT Internet accessible.', 'simply-silverlight');
+	echo "<p class='description' style='margin-left:20px;'>".__('A secure location containing .xap files. The default path is protected from Internet access by web.config (IIS 7) and .htaccess (Apache) files. Ensure this directory is NOT Internet accessible. (Hint: To restore the default location, enter "default" and then click Save Changes.)', 'simply-silverlight');
 	echo "</div>"; 
 	echo "</div>";
 }
 
 function simply_silverlight_accesscontrol_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	echo "<div>";
 	echo "<div style='float:left;width:40%;'>";
 	echo "<textarea id='simply-silverlight-settings[accesscontrol]' name='simply-silverlight-settings[accesscontrol]' cols='100' style='width:100%; min-width:100%; max-width:100%; height:150px; min-height:150px;' value='{$options['accesscontrol']}'>{$options['accesscontrol']}</textarea>";
@@ -101,7 +101,7 @@ function simply_silverlight_accesscontrol_setting_html() {
 }
 
 function simply_silverlight_width_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	echo "<div>";
 	echo "<div style='float:left;width:20%;'>";
         echo "<input id='simply-silverlight-settings[width]' name='simply-silverlight-settings[width]' type='text' style='width:100%;' value='{$options['width']}'>";
@@ -113,7 +113,7 @@ function simply_silverlight_width_setting_html() {
 }
 
 function simply_silverlight_height_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	echo "<div>";
 	echo "<div style='float:left;width:20%;'>";
 	echo "<input id='simply-silverlight-settings[height]' name='simply-silverlight-settings[height]' type='text' style='width:100%;' value='{$options['height']}'>";
@@ -125,7 +125,7 @@ function simply_silverlight_height_setting_html() {
 }
 
 function simply_silverlight_background_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	echo "<div>";
 	echo "<div style='float:left;width:20%;'>";
 	echo "<input id='simply-silverlight-settings[background]' name='simply-silverlight-settings[background]' type='text' style='width:100%;' value='{$options['background']}'>";
@@ -137,7 +137,7 @@ function simply_silverlight_background_setting_html() {
 }
 
 function simply_silverlight_display_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	$items = array("inline", "block", "list-item");
 	echo "<div>";
 	echo "<div style='float:left;width:20%;'>";
@@ -155,7 +155,7 @@ function simply_silverlight_display_setting_html() {
 }
 
 function simply_silverlight_float_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	$items = array("left", "right");
 	echo "<div>";
 	echo "<div style='float:left;width:20%;'>";
@@ -173,7 +173,7 @@ function simply_silverlight_float_setting_html() {
 }
 
 function simply_silverlight_style_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	echo "<div>";
 	echo "<div style='float:left;width:20%;'>";
 	echo "<input id='simply-silverlight-settings[style]' name='simply-silverlight-settings[style]' type='text' style='width:100%;' value='{$options['style']}'>";
@@ -185,7 +185,7 @@ function simply_silverlight_style_setting_html() {
 }
 
 function simply_silverlight_version_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	$items = array("5.0.60401.0", "4.0.60531.0", "3.0.50106.0");
 	echo "<div>";
 	echo "<div style='float:left;width:20%;'>";
@@ -203,7 +203,7 @@ function simply_silverlight_version_setting_html() {
 }
 
 function simply_silverlight_autoupgrade_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	$items = array("true", "false");
 	echo "<div>";
 	echo "<div style='float:left;width:20%;'>";
@@ -221,7 +221,7 @@ function simply_silverlight_autoupgrade_setting_html() {
 }
 
 function simply_silverlight_preservesettings_setting_html() {
-	global $options;
+    $options = get_option('simply-silverlight-settings');
 	$items = array("true", "false");
 	echo "<div>";
 	echo "<div style='float:left;width:20%;'>";
