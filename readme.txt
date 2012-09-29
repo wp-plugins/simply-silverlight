@@ -4,8 +4,8 @@ Author URI: http://www.digitalwindfire.com
 Donate link: http://www.digitalwindfire.com/software/simply-silverlight/donate
 Tags: silverlight, microsoft
 Requires at least: 3.0
-Tested up to: 3.3.2
-Stable tag: 1.0.1
+Tested up to: 3.4.2
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,11 @@ Not yet. Currently it's only available in English. However, the plugin is ready 
 
 == Changelog ==
 
+= 1.0.2 =
+- FIXED: Settings page displays empty fields on some web hosts.
+- FIXED: Clarified error messages with Secure Path access.
+- ADDED: Ability to restore default Secure Path without changing other settings.
+
 = 1.0.1 =
 - ADDED: Ability to restrict access to Silverlight apps authorized users only.
 - ADDED: Silverlight 5 version number included in global settings.
@@ -58,6 +63,9 @@ Not yet. Currently it's only available in English. However, the plugin is ready 
 - (18 Sep 2011) Initial Release
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+This version fixes a bug that could cause all settings values to be displayed as empty fields and they cannot be set or reset on some web hosts. Please upgrade immediately!
 
 = 1.0.1 =
 This version of Simply Silverlight allows administrators who want to allow only specific users and roles to access their Silverlight apps the granular authentication they've been looking for. Don't delay, upgrade today!
