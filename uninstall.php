@@ -1,11 +1,11 @@
 <?php
 /*
-	This file is part of the Simply Silverlight 1.0 plugin for WordPress.
+	This file is part of the Simply Silverlight 1.0.2 plugin for WordPress.
 	For more information, please visit http://www.digitalwindfire.com/software/simply-silverlight.
 */
 
 /*
-	Copyright 2011  David Wright  (email : davidwright@digitalwindfire.com)
+	Copyright 2011-2012  David Wright  (email : davidwright@digitalwindfire.com)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
