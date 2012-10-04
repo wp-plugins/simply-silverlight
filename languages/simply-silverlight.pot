@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Simply Silverlight\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-29 13:53-0500\n"
-"PO-Revision-Date: 2012-09-29 13:53-0500\n"
+"POT-Creation-Date: 2012-10-04 17:43-0500\n"
+"PO-Revision-Date: 2012-10-04 17:43-0500\n"
 "Last-Translator: David Wright <davidwright@digitalwindfire.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -32,8 +32,96 @@ msgstr ""
 "X-Generator: Poedit 1.5.3\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../simply-silverlight-html.php:29 ../simply-silverlight.php:132
+#: ../simply-silverlight.php:132 ../simply-silverlight-html.php:29
 msgid "Simply Silverlight Settings"
+msgstr ""
+
+#: ../simply-silverlight.php:132
+msgid "Simply Silverlight"
+msgstr ""
+
+#: ../simply-silverlight.php:144
+msgid "Path"
+msgstr ""
+
+#: ../simply-silverlight.php:145
+msgid "Secure Path"
+msgstr ""
+
+#: ../simply-silverlight.php:146
+msgid "Access Control"
+msgstr ""
+
+#: ../simply-silverlight.php:147
+msgid "Width"
+msgstr ""
+
+#: ../simply-silverlight.php:148
+msgid "Height"
+msgstr ""
+
+#: ../simply-silverlight.php:149
+msgid "Background"
+msgstr ""
+
+#: ../simply-silverlight.php:150
+msgid "CSS Display"
+msgstr ""
+
+#: ../simply-silverlight.php:151
+msgid "CSS Float"
+msgstr ""
+
+#: ../simply-silverlight.php:152
+msgid "CSS Style"
+msgstr ""
+
+#: ../simply-silverlight.php:153
+msgid "Version"
+msgstr ""
+
+#: ../simply-silverlight.php:154
+msgid "Autoupgrade"
+msgstr ""
+
+#: ../simply-silverlight.php:155
+msgid "Preserve Settings"
+msgstr ""
+
+#: ../simply-silverlight.php:166
+msgid "Configure settings for this plugin"
+msgstr ""
+
+#: ../simply-silverlight.php:166
+msgid "Settings"
+msgstr ""
+
+#: ../simply-silverlight.php:199
+msgid "Path must be a directory."
+msgstr ""
+
+#: ../simply-silverlight.php:207
+msgid "Relative paths must begin with a \"/\"."
+msgstr ""
+
+#: ../simply-silverlight.php:221
+msgid "Secure path does not exist."
+msgstr ""
+
+#: ../simply-silverlight.php:245
+msgid "Width must be a number not greater than 9999."
+msgstr ""
+
+#: ../simply-silverlight.php:253
+msgid "Height must be a number not greater than 9999."
+msgstr ""
+
+#: ../simply-silverlight.php:392
+msgid "The requested file does not exist."
+msgstr ""
+
+#: ../simply-silverlight.php:395
+msgid "There was a problem with the request."
 msgstr ""
 
 #: ../simply-silverlight-html.php:35
@@ -134,84 +222,4 @@ msgstr ""
 
 #: ../simply-silverlight-html.php:236
 msgid "Settings will be preserved when plugin is deactivated."
-msgstr ""
-
-#: ../simply-silverlight.php:132
-msgid "Simply Silverlight"
-msgstr ""
-
-#: ../simply-silverlight.php:144
-msgid "Path"
-msgstr ""
-
-#: ../simply-silverlight.php:145
-msgid "Secure Path"
-msgstr ""
-
-#: ../simply-silverlight.php:146
-msgid "Access Control"
-msgstr ""
-
-#: ../simply-silverlight.php:147
-msgid "Width"
-msgstr ""
-
-#: ../simply-silverlight.php:148
-msgid "Height"
-msgstr ""
-
-#: ../simply-silverlight.php:149
-msgid "Background"
-msgstr ""
-
-#: ../simply-silverlight.php:150
-msgid "CSS Display"
-msgstr ""
-
-#: ../simply-silverlight.php:151
-msgid "CSS Float"
-msgstr ""
-
-#: ../simply-silverlight.php:152
-msgid "CSS Style"
-msgstr ""
-
-#: ../simply-silverlight.php:153
-msgid "Version"
-msgstr ""
-
-#: ../simply-silverlight.php:154
-msgid "Autoupgrade"
-msgstr ""
-
-#: ../simply-silverlight.php:155
-msgid "Preserve Settings"
-msgstr ""
-
-#: ../simply-silverlight.php:166
-msgid "Configure settings for this plugin"
-msgstr ""
-
-#: ../simply-silverlight.php:166
-msgid "Settings"
-msgstr ""
-
-#: ../simply-silverlight.php:199
-msgid "Path must be a directory."
-msgstr ""
-
-#: ../simply-silverlight.php:207
-msgid "Relative paths must begin with a \"/\"."
-msgstr ""
-
-#: ../simply-silverlight.php:221
-msgid "Secure path does not exist."
-msgstr ""
-
-#: ../simply-silverlight.php:245
-msgid "Width must be a number not greater than 9999."
-msgstr ""
-
-#: ../simply-silverlight.php:253
-msgid "Height must be a number not greater than 9999."
 msgstr ""

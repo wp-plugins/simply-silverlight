@@ -3,7 +3,7 @@
 	Plugin Name: Simply Silverlight
 	Plugin URI: http://www.digitalwindfire.com/software/simply-silverlight
 	Description: Bring the power of Microsoft's visually rich Silverlight technology to your WordPress site today! Simply Silverlight makes deploying Silverlight .xap files to your WordPress blog's posts and pages incredibly easy and intuitive. Don't hesitate, click Activate now!
-	Version: 1.0.2
+	Version: 1.0.3
 	Author: David Wright
 	Author URI: http://www.digitalwindfire.com
 	License: GPL2
@@ -380,18 +380,19 @@ function simply_silverlight_parse_request($wp) {
 		// if authenticated send the .xap
 		if ($authenticated) {
 			$filename = $options['securepath'].$requested_xap;
-	
+
 			if (file_exists($filename)) {
 				$len = filesize($filename);
 				header("Content-Length: $len");
 				header("Content-Type: application/x-silverlight-app");
 				header("Content-Disposition: attachment; filename=\"$requested_xap\"");
 				readfile($filename);
+				ob_end_flush();
 			} else {
-                wp_die('The requested file does not exist.');
+                wp_die(__('The requested file does not exist.', 'simply-silverlight'));
 		    }
 		} else {
-			wp_die('There was a problem with the request.');
+			wp_die(__('There was a problem with the request.', 'simply-silverlight'));
 		}
     }
 }

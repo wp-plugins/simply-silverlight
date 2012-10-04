@@ -5,7 +5,7 @@ Donate link: http://www.digitalwindfire.com/software/simply-silverlight/donate
 Tags: silverlight, microsoft
 Requires at least: 3.0
 Tested up to: 3.4.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,9 @@ Not yet. Currently it's only available in English. However, the plugin is ready 
 
 == Changelog ==
 
+= 1.0.3 =
+- FIXED: Silverlight applications won't display when used with Secure Path on some web hosts.
+
 = 1.0.2 =
 - FIXED: Settings page displays empty fields on some web hosts.
 - FIXED: Clarified error messages with Secure Path access.
@@ -63,6 +66,8 @@ Not yet. Currently it's only available in English. However, the plugin is ready 
 - (18 Sep 2011) Initial Release
 
 == Upgrade Notice ==
+= 1.0.3 =
+This version fixes a bug that prevents Silverlight applications from displaying when using the Secure Path on some web hosts. Please upgrade immediately!
 
 = 1.0.2 =
 This version fixes a bug that could cause all settings values to be displayed as empty fields and they cannot be set or reset on some web hosts. Please upgrade immediately!

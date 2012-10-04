@@ -1,6 +1,6 @@
 <?php
 /*
-	This file is part of the Simply Silverlight 1.0.2 plugin for WordPress.
+	This file is part of the Simply Silverlight 1.0.3 plugin for WordPress.
 	For more information, please visit http://www.digitalwindfire.com/software/simply-silverlight.
 */
 
